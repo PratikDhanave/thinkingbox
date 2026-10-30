@@ -119,7 +119,7 @@ def test_text_yesno_with_motivation_malformed_shapes_fall_back():
         '{"motivation": "x", "answer": true}',
         '{"motivation": "x"}',
         '["Yes"]',
-        '5',
+        "5",
     ):
         judge = Judge(_mock_judge_llm([resp]))
         result = judge.text_yesno_with_motivation("reply", "Did they comply?")
